@@ -55,6 +55,7 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	qtquickcontrols2-5-dev
 
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --only-upgrade \
+	cmake \
 	extra-cmake-modules
 
 ### Clone repo.
