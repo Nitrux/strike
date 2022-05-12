@@ -36,7 +36,7 @@ wget -qO /etc/apt/sources.list.d/nitrux-testing-repo.list https://raw.githubuser
 DEBIAN_FRONTEND=noninteractive apt -qq update
 
 ### Install Package Build Dependencies #2
-### Bonsai needs ECM > 5.70
+### Strike needs ECM > 5.70
 
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	libkf5config-dev \
@@ -59,11 +59,11 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --only-upgrade \
 
 ### Clone repo.
 
-git clone --single-branch --branch master https://invent.kde.org/maui/bonsai.git
+git clone --single-branch --branch master https://invent.kde.org/maui/strike.git
 
 ### Compile Source
 
-mkdir -p bonsai/build && cd bonsai/build
+mkdir -p strike/build && cd strike/build
 
 cmake \
 	-DCMAKE_INSTALL_PREFIX=/usr \
@@ -95,16 +95,16 @@ make
 checkinstall -D -y \
 	--install=no \
 	--fstrans=yes \
-	--pkgname=bonsai-git \
+	--pkgname=strike-git \
 	--pkgversion=2.1.2+git+1 \
 	--pkgarch=amd64 \
 	--pkgrelease="1" \
 	--pkglicense=LGPL-3 \
 	--pkggroup=utils \
-	--pkgsource=bonsai \
+	--pkgsource=strike \
 	--pakdir=../.. \
 	--maintainer=uri_herrera@nxos.org \
-	--provides=bonsai \
+	--provides=strike \
 	--requires="libc6,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5qml5,libqt5quick5,libqt5widgets5,libstdc++6,mauikit-git \(\>= 2.1.2+git+1\),mauikit-filebrowsing-git \(\>= 2.1.2+git+1\)" \
 	--nodoc \
 	--strip=no \
