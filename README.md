@@ -1,4 +1,4 @@
-# Strike [![Build Status](https://travis-ci.org/Nitrux/strike.svg?branch=main)](https://travis-ci.org/Nitrux/strike)
+# Strike
 
 Strike is a simple minimal IDE for the Linux phones. Code, build, and run from the phone.
 
