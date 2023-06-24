@@ -69,7 +69,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=strike \
-	--requires="libc6,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5qml5,libqt5quick5,libqt5widgets5,libstdc++6,mauikit-git \(\>= 2.2.2+git\),mauikit-filebrowsing-git \(\>= 2.2.2+git\)" \
+	--requires="libc6,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5gui5,libqt5qml5,libqt5quick5,libqt5widgets5,libstdc++6,mauikit-git \(\>= 3.0.0+git\),mauikit-filebrowsing-git \(\>= 3.0.0+git\)" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
