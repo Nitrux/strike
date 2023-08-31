@@ -18,7 +18,8 @@ apt -qq update
 
 apt -qq -yy install --no-install-recommends \
 	mauikit-git \
-	mauikit-filebrowsing-git
+	mauikit-filebrowsing-git \
+	mauikit-texteditor-git
 
 ### Download Source
 
