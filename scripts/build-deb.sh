@@ -71,7 +71,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=strike \
-	--requires="mauikit-git \(\>= 4.0.1\),mauikit-filebrowsing-git \(\>= 4.0.1\),mauikit-texteditor-git \(\>= 4.0.1\),mauikit-terminal-git \(\>= 4.0.1\),qml6-module-qtcore" \
+	--requires="kio-extras,mauikit-filebrowsing-git \(\>= 4.0.1\),mauikit-git \(\>= 4.0.1\),mauikit-terminal-git \(\>= 4.0.1\),mauikit-texteditor-git \(\>= 4.0.1\),qml6-module-qtcore,qml6-module-qtquick-effects" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
