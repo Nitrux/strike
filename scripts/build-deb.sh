@@ -72,7 +72,7 @@ make install
 checkinstall -D -y \
 	--install=no \
 	--fstrans=yes \
-	--pkgname=strike-git \
+	--pkgname=strike \
 	--pkgversion="$PACKAGE_VERSION" \
 	--pkgarch="$(dpkg --print-architecture)" \
 	--pkgrelease="1" \
@@ -82,7 +82,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=strike \
-	--requires="kio-extras,mauikit-filebrowsing-git \(\>= 4.0.2\),mauikit-git \(\>= 4.0.2\),mauikit-terminal-git \(\>= 4.0.2\),mauikit-texteditor-git \(\>= 4.0.2\),qml6-module-qtcore,qml6-module-qtquick-effects" \
+	--requires="kio-extras,mauikit-filebrowsing \(\>= 4.0.2\),mauikit \(\>= 4.0.2\),mauikit-terminal \(\>= 4.0.2\),mauikit-texteditor \(\>= 4.0.2\),qml6-module-qtcore,qml6-module-qtquick-effects" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
