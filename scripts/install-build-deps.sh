@@ -21,7 +21,7 @@ fi
 # -- Install build packages.
 
 $APT_COMMAND update -q
-$APT_COMMAND install -y - --no-install-recommends \
+$APT_COMMAND install -y --no-install-recommends \
     appstream \
     automake \
     autotools-dev \
@@ -65,7 +65,7 @@ Enabled: yes
 EOF
 
 $APT_COMMAND update -q
-$APT_COMMAND install -y - --no-install-recommends \
+$APT_COMMAND install -y --no-install-recommends \
     mauikit-filebrowsing \
     mauikit-texteditor \
     mauikit-terminal \
